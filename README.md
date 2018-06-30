@@ -17,14 +17,13 @@ Data is available in NCBI SRA under the accession number [PRJNA412551](https://w
 | FastQC | 0.11.5 | http://www.bioinformatics.babraham.ac.uk/projects/fastqc/ |
 | Trimmomatic | 0.36 | http://www.usadellab.org/cms/?page=trimmomatic  |
 | kallisto | 0.42.3 | https://pachterlab.github.io/kallisto/ |
-| sleuth | ??? | https://pachterlab.github.io/sleuth/ |
+| sleuth | - | https://pachterlab.github.io/sleuth/ |
 
 ## Data analysis walkthroughs & code
 
 Walkthroughs and code used for all of the quality assessment and data analysis steps are available in each of the below links.
-**editing note: Scott, please insert URLs to text walkthroughs for steps 1-3 using Cyverse DE apps and your sleuth script for step #4**
 
-1. [Quality assessment with FastQC]
-2. [Sequence trimming with Trimmomatic]
-3. [Quantitation with kallisto]
-4. [Normalization, visualization, and differential expression analysis with sleuth]
+1. [Quality assessment with FastQC](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/fastqc)
+2. [Sequence trimming with Trimmomatic](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/trimmomatic)
+3. [Quantitation with kallisto](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/kallisto)
+4. [Normalization, visualization, and differential expression analysis with sleuth](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/sleuth)
