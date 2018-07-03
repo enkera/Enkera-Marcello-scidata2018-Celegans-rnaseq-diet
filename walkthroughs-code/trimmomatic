@@ -1,2 +1,8 @@
-The following link is a tutorial for how to use Trimmomatic provided by Cyverse
-(https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/)
+The following link is a tutorial provided by Cyverse on how to use trimmomatic
+https://cyverse-trimmomatic-quickstart.readthedocs-hosted.com/en/latest/
+
+Here are the trim settings specific to the C. elegans data analysis:
+SLIDINGWINDOW:4:28 
+LEADING:20   
+TRAILING:20 
+MINLEN:50 
