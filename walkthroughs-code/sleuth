@@ -1,3 +1,7 @@
+The following link is a tutorial provided by Cyverse on how to use Sleuth:
+https://learning.cyverse.org/projects/kallisto_tutorial/en/latest/step4.html
+
+The following is the Sleuth script specific for the C. elegans RNA-Seq analysis:
 # R Script for the analysis of C. elegans RNA-Seq data
 # RNA-Seq data derived from Pace University (Marcello Lab)
 # Kallisto/Sleuth was developed by The Pachter Lab at Caltech
