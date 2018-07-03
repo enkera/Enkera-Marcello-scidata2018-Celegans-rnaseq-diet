@@ -1,2 +1,9 @@
-The following link is a tutorial provided by Cyverse to use Kallisto and Sleuth
+The following link is a tutorial provided by Cyverse on how to use Kallisto
 https://learning.cyverse.org/projects/kallisto_tutorial/en/latest/
+
+Kallisto Index information:
+The following is a link to the reference transciptome used to create the kallisto index:
+ftp://ftp.ensembl.org/pub/release-92/fasta/caenorhabditis_elegans/cdna/Caenorhabditis_elegans.WBcel235.cdna.all.fa.gz
+
+Kallisto Quantification information:
+Number of bootstrap samples: 100
