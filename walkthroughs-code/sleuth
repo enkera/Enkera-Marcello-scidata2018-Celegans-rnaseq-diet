@@ -19,7 +19,7 @@ biocLite("biomaRt")
 install.packages("cowplot")
 library(cowplot)  
 
-# Install and load ggrepel to label data points within ggplot2
+# Install and load ggrepel to label/repel data points within ggplot2
 install.packages("ggrepel")
 library("ggrepel")
 
@@ -32,15 +32,14 @@ devtools::install_github("pachterlab/sleuth")
 # Load the Sleuth package
 library(sleuth)
 
-# Paste the filepath of your Kallisto results between the quotation marks. 
+# Paste the file path of your Kallisto results between the quotation marks. 
 sample_id <- dir(file.path(""))
 
-# Return the names on your samples to check that they all populate
-# in the console
+# Return the names on your samples to check that they populate correctly
 sample_id
 
-# Access each file path for each sample. Again, paste the same
-# file path as before and also wright the sample_id
+# Access each file path for each sample.
+# Paste the same file path as before and also add the sample_id
 kal_dirs <- file.path("", 
                       sample_id)
 
@@ -48,14 +47,13 @@ kal_dirs <- file.path("",
 kal_dirs
 
 # Create a design matrix table (.txt) file and save it
-# Load the table - Paste file path in between the quotation marks
-# Assign the variable 's2c'
+# Load the table - Paste file path within the quotation marks
 s2c <- read.table(file.path(""),
                   header = TRUE,
                   stringsAsFactors = FALSE,
                   sep = "\t")
 
-# Return the table to see if it populates in the console correctly
+# Return the table to see if it populates correctly in the console
 s2c
 
 # Add the directories as a final table column called 'path'
@@ -71,7 +69,7 @@ library(biomaRt)
 listMarts()
 
 # Assign the variable 'ensembl'
-# Choose which mart to use. Insert mart of choice betwwen quotation marks
+# Choose which mart to use. Insert mart of choice between quotation marks
 # In this case we will use the mart 'ENSEMBL_MART_ENSEMBL'
 ensembl = useMart("ENSEMBL_MART_ENSEMBL")
 
@@ -90,14 +88,13 @@ t2g <- biomaRt::getBM(
                  "ensembl_gene_id", "external_gene_name", "description",
                  "transcript_biotype"), mart = mart)
 
-# Renaming the output from BioMart to make it easier to work
-# within sleuth
+# Rename the output from BioMart for Sleuth
 t2g <- dplyr::select(t2g, 
                      target_id = ensembl_transcript_id, ens_gene = ensembl_gene_id, Gene_Name = external_gene_name, 
                      description, transcript_biotype)
 
 # Return the preview listing of transcripts to see if they populate in 
-# console. Not all transcripts will populate due 'head' function
+# console.
 head(t2g)
 
 # Create the "Sleuth Object": a data structure that contains the results
@@ -105,8 +102,7 @@ so <- sleuth_prep(s2c,
                   target_mapping = t2g,
                   extra_bootstrap_summary = TRUE)
 
-# Check to see if target mapping worked with data and bioMArt was
-# successful
+# Check to see if target mapping worked with data and bioMArt was successful
 View(so$target_mapping)
 
 # Check the structure of the data with a PCA plot
