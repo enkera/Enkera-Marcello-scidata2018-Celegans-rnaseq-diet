@@ -26,6 +26,6 @@ Walkthroughs and code used for all of the quality assessment and data analysis s
 
 1. [Quality assessment with FastQC](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/fastqc)
 2. [Sequence trimming with Trimmomatic](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/trimmomatic)
-3. [Quality Analysis summary with MultiQC]
+3. [Quality Analysis summary with MultiQC](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/MutliQC)
 3. [Quantitation with kallisto](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/kallisto)
 4. [Normalization, visualization, and differential expression analysis with sleuth](https://github.com/enkera/Enkera-Marcello-scidata2018-Celegans-rnaseq-diet/blob/master/walkthroughs-code/sleuth)
